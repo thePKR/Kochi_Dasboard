@@ -1,4 +1,4 @@
-Spelling mistake is intentional as it sounds cool . Anyways here are the # app.py
+#Spelling mistake is intentional as it sounds cool . Anyways here are the # app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
