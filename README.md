@@ -1,98 +1,89 @@
 <div align="center">
-🚏 Kochi Integrated Transport Intelligence Dashboard
-Ward-Level Urban Analytics • Intermodal Index Engine • Policy Simulation System
-<br>
 
-
-
-
-
-
-
-
-
-
-
+# 🚏 Kochi Urban Transport Intelligence System
+### *Ward-Level Analytics • Intermodal Index Engine • Spatial Policy Dashboard*
 
 <br>
 
-From Fieldwork to Decision Intelligence
-Built on real ward-level data from Kochi to model infrastructure equity, modal balance, and transport connectivity.
+<img src="https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-Interactive%20Dashboard-FF4B4B?logo=streamlit&logoColor=white" />
+<img src="https://img.shields.io/badge/GeoPandas-Spatial%20Analytics-2E8B57" />
+<img src="https://img.shields.io/badge/Folium-Geo%20Visualization-3CB371" />
+<img src="https://img.shields.io/badge/SDG-11%20Sustainable%20Cities-2E8B57" />
+<img src="https://img.shields.io/badge/License-MIT-black" />
+
+<br><br>
+
+**From Field Immersion to Decision Intelligence**  
+A policy-oriented transport analytics engine built on real ward-level data from Kochi.
 
 </div>
-🌍 What This Is
 
-A production-grade ward-level transport analytics system that:
+---
 
-Normalizes infrastructure per 1,000 population
+## 🌍 Overview
 
-Computes a customizable Intermodal Connectivity Index (0–100)
+This project transforms raw urban transport data into a **ward-level decision-support system**.
 
-Ranks wards dynamically under different policy weights
+Instead of visualizing counts, it computes:
 
-Generates choropleth maps for spatial equity analysis
+- Infrastructure intensity per 1,000 population  
+- Multi-modal balance indicators  
+- A customizable Intermodal Connectivity Index  
+- Spatial equity diagnostics  
 
-Exports decision-ready datasets
+This is not a static dashboard.  
+It is a **transport policy simulation tool.**
 
-This is not a visualization tool.
-It is a policy simulation engine for urban transport planning.
+---
 
-🧠 Core Engine: Intermodal Connectivity Index
-Index=w1(Bus)+w2(Metro)+w3(Auto)+w4(Taxi)+w5(Inverse Distance)
-Index=w
-1
-	​
+# 🧠 Intermodal Connectivity Engine
 
-(Bus)+w
-2
-	​
+### Composite Index (0–100)
 
-(Metro)+w
-3
-	​
+```
+Index = w₁(Bus) + w₂(Metro) + w₃(Auto) + w₄(Taxi) + w₅(Inverse Distance)
+```
 
-(Auto)+w
-4
-	​
+✔ Min-max normalized  
+✔ Weight-adjustable in real time  
+✔ Live ward rank recalculation  
+✔ Capital allocation experimentation ready  
 
-(Taxi)+w
-5
-	​
+Change weights → Observe structural bias → Identify under-served wards.
 
-(Inverse Distance)
+---
 
-✔ Min-max normalized
-✔ Weight-adjustable in real time
-✔ Live rank recalculation
-✔ Designed for capital allocation experiments
+# 🗺 Spatial Intelligence Layer
 
-Adjust weights → Watch ward priorities shift → Identify structural bias.
+- Ward shapefile integration  
+- Interactive Folium choropleth  
+- Auto-zoom on selected wards  
+- Sustainability gradient (Purple → Blue → Green → Yellow)  
+- Geometry fallback mode  
 
-🗺 Spatial Intelligence Layer
+---
 
-Ward shapefile integration
+# 📊 Ward-Level KPIs Generated
 
-Interactive Folium choropleth
+| Indicator | Scaling |
+|------------|-----------|
+| Bus Stops | per 1,000 population |
+| Auto Stands | per 1,000 population |
+| Taxi Stands | per 1,000 population |
+| Metro Stations | per 1,000 population |
+| Road Length | km per 1,000 population |
+| Population (2025 Est.) | Area-share fallback |
+| Intermodal Index | Composite 0–100 |
 
-Auto-centering on selected wards
+---
 
-Custom sustainability color gradient
+# 🏗 System Architecture
 
-Fallback non-geometry preview mode
-
-📊 Ward-Level KPIs Generated
-Indicator	Scaling
-Bus Stops	per 1,000 population
-Auto Stands	per 1,000 population
-Taxi Stands	per 1,000 population
-Metro Stations	per 1,000 population
-Road Length	km per 1,000 population
-Population (2025 Est.)	Area-share fallback model
-Intermodal Index	0–100 composite
-🏗 Architecture Overview
-Field Data (Transport + GIS)
+```
+Field Data Collection
         ↓
-Ward Normalization
+Data Cleaning & Ward Normalization
         ↓
 Population Scaling
         ↓
@@ -105,67 +96,87 @@ Composite Index Engine
 Geospatial Rendering
         ↓
 Downloadable Decision Dataset
+```
 
-🚀 Run Locally
+---
+
+# 🚀 Run Locally
+
+```bash
 git clone https://github.com/yourusername/kochi-transport-dashboard.git
 cd kochi-transport-dashboard
 pip install -r requirements.txt
 streamlit run app.py
+```
 
-🎯 Why This Project Matters
+---
 
-Urban transport inequity is invisible without normalization.
+# 🎯 Why This Matters
 
-Raw counts mislead.
-Per-capita scaling reveals concentration bias.
-Weighted composite indices reveal infrastructure asymmetry.
+Urban inequity hides in raw numbers.
+
+Absolute counts distort policy.
+
+Per-capita scaling reveals infrastructure imbalance.  
+Weighted indices reveal modal dominance bias.  
+Spatial overlays reveal concentrated under-service.
 
 This system helps answer:
 
-Which wards are structurally under-served?
+- Which wards are structurally neglected?
+- What happens if metro investment weight increases?
+- Is bus infrastructure compensating for metro gaps?
+- Where should capital be allocated first?
 
-What happens if metro weight doubles?
+---
 
-Is bus infrastructure compensating for metro absence?
+# 📈 Policy Alignment
 
-Where should capital be allocated first?
+- SDG 11 – Sustainable Cities  
+- SDG 9 – Infrastructure  
+- Urban Resilience Diagnostics  
+- Equity-Based Capital Allocation  
+- Data-Driven Governance  
 
-📈 Policy Alignment
+---
 
-✔ SDG 11 – Sustainable Cities
-✔ SDG 9 – Infrastructure
-✔ Equity-Based Capital Allocation
-✔ Urban Resilience Diagnostics
-✔ Governance Data Systems
+# 🔬 Grounded in Field Observations
 
-🔬 Built From Field Observations
+Built after ward-level immersion in:
 
-Grounded in on-site ward-level field immersion in:
+- Fort Kochi  
+- Amravati  
+- Nazarath  
 
-Fort Kochi
+Accessibility gaps and modal dependency patterns were converted into measurable infrastructure indicators.
 
-Amravati
+---
 
-Nazarath
+# 🧩 Roadmap
 
-Infrastructure accessibility gaps and modal dependency patterns were observed and translated into measurable indicators (see Kochi Fieldwork Report).
+<details>
+<summary>Planned Extensions</summary>
 
-🧩 Future Upgrades
+- Accessibility Compliance Index (PWD standards)  
+- Infrastructure Gini Coefficient  
+- Climate Vulnerability Overlay  
+- Multi-sector Sustainability Composite  
+- Budget Allocation Simulation Engine  
+- API-based Live Transport Feed Integration  
 
-Accessibility Compliance Index (PWD standards)
+</details>
 
-Climate Vulnerability Overlay
+---
 
-Infrastructure Gini Coefficient
+# 👤 Author
 
-Multi-sector Urban Sustainability Composite
+**Prakhar Kumar Rai**  
+Urban Systems • Sustainability Analytics • Policy Modelling  
 
-API-based live transport feed integration
+---
 
-Budget allocation simulation module
+<div align="center">
 
-👤 Author
+### ⭐ If this project aligns with your work in urban governance or infrastructure analytics, feel free to connect.
 
-Prakhar Kumar Rai
-Urban Systems • Sustainability Analytics • Policy Modelling
-Built as part of Bachelor’s in Analytics & Sustainability Studies
+</div>
